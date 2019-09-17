@@ -2,7 +2,7 @@ FROM alpine:3.10.2
 LABEL maintainer="Sebastien Lucas <sebastien@slucas.fr>"
 LABEL Description="RClone docker image"
 
-ARG RCLONE_VERSION=v1.48.0
+ARG RCLONE_VERSION=v1.49.3
 ADD alpineArch2rcloneArch.sh /bin/alpineArch2rcloneArch.sh
 
 RUN apk add -U --no-cache ca-certificates && \
